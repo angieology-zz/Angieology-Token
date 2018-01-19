@@ -85,10 +85,10 @@ contract Angieology is ERC223Interface {
     
     /* standard properties of token */
     
-    string name;
-    uint8 decimals;
-    string symbol;
-    uint totalSupply;
+    string public name;
+    uint8 public decimals;
+    string public symbol;
+    uint public totalSupply;
     
     /*constructor will assign values to properties */
     
