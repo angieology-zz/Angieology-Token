@@ -95,10 +95,11 @@ contract Angieology is ERC223Interface {
     function Angieology() {
         name = "Angela";
         decimals = 18; //ethereum has 18 decimals, bitcoin 8
-        symbol = "AYL" 
+        symbol = "AYL";
         totalSupply = 1000000 * 10 ** decimals; 
         //I want a million tokens to exist in my contract
         //enables token to have 18 decimal places
+        balances[msg.sender] = totalSupply;
     }
 
     mapping(address => uint) balances; // List of user balances.
