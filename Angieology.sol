@@ -96,7 +96,7 @@ contract Angieology is ERC223Interface {
         name = "Angela";
         decimals = 18; //ethereum has 18 decimals, bitcoin 8
         symbol = "AYL";
-        totalSupply = 1000000 * 10 ** decimals; 
+        totalSupply = 1000000 * 10 ** uint(decimals); 
         //I want a million tokens to exist in my contract
         //enables token to have 18 decimal places
         balances[msg.sender] = totalSupply;
